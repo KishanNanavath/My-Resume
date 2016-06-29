@@ -23,6 +23,7 @@ moviesapp.controller('mainCtrl',['$scope','$http','myServ',function ($scope,$htt
         });
         
     self.showDialog = function(data){
+        console.log("Here "+data);
         alert(data);
     }
 }]);
