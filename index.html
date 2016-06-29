@@ -47,8 +47,8 @@
             <div flex-lg="50" flex-md="25" flex-sm="50" flex-xs="100" ng-repeat="dat in mc.data">
                 <md-card style="background-color: #9acfea">
                     <md-card-content layout-lg="row" layout-align="stretch center">
-                        <md-card layout-align="center center" ng-click="showDialog(dat)">
-                            <img style="display: block" class="img-responsive" ng-src="{{dat.poster_path == null? mc.noPoster:mc.base_url+dat.poster_path}}">
+                        <md-card layout-align="center center">
+                            <img ng-click="showDialog(dat)" style="display: block" class="img-responsive" ng-src="{{dat.poster_path == null? mc.noPoster:mc.base_url+dat.poster_path}}">
                         </md-card>
                         <md-card style="background-color: #5bc0de" flex>
                             <md-card-content>
