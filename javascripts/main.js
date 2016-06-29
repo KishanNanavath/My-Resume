@@ -22,8 +22,8 @@ moviesapp.controller('mainCtrl',['$scope','$http','myServ',function ($scope,$htt
             console.log(response);
         });
         
-    self.showDialog = function(data){
-        console.log("Here "+data);
-        alert(data);
+    self.showDialog = function(){
+        console.log("Here ");
+        // alert(data);
     }
 }]);
