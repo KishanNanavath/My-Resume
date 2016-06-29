@@ -16,8 +16,8 @@ moviesapp.controller('mainCtrl',['$scope','$http','myServ',function ($scope,$htt
     self.noPoster = 'https://assets.tmdb.org/assets/7f29bd8b3370c71dd379b0e8b570887c/images/no-poster-w185-v2.png';
     self.base_url = 'https://image.tmdb.org/t/p/w185';
     
-    self.myDialog = function(){
-        alert("Hello");
+    self.myDialog = function(data){
+        alert(data);
     };
     
     myServ.Async(self.link+'king')
