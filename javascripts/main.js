@@ -17,8 +17,8 @@ moviesapp.controller('mainCtrl',['$scope','$http','myServ',function ($scope,$htt
     self.base_url = 'https://image.tmdb.org/t/p/w185';
     
     //ok
-    self.myDialog = function(data){
-        alert(data);
+    self.myDialog = function(dat){
+        alert(dat);
     };
     
     myServ.Async(self.link+'king')
