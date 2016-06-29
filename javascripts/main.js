@@ -18,7 +18,7 @@ moviesapp.controller('mainCtrl',['$scope','$http','myServ',function ($scope,$htt
     
     //ok
     self.myDialog = function(dat){
-        alert(dat);
+        alert(dat.title);
     };
     
     myServ.Async(self.link+'king')
